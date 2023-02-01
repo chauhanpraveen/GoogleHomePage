@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        // var str="JavaScript";
+        // document.write(str.charAt(4));
+        // document.write(str.charAt());
+        // document.write(str.charAt(""))
+
+        // var name="Praveen singh chauhan";
+        // document.write(name.charAt(9));
+
+        // var str = "javscript";
+        // document.write(str.charCodeAt(3));
+        // document.write(str.charCodeAt());
+        // document.write(str.charCodeAt(0));
+        // document.write(str.charCodeAt(str.length-1));
+        // document.write(str.charCodeAt(8));
+
+
+
+        // var str = "praveen";
+        // document.write(str.charCodeAt(30));
+
+
+
+        // var str = "praveen";
+        // document.write(str.charCodeAt(10));
+
+        // concat method are used to add multiple string to each other//
+        // var str1="Praveen";
+        // var str2="Singh";
+        // var str3="Chaihan";
+        // document.write(str1.concat(str2, str3));
+        // document.write(`${str1} ${str2} ${str3}`);
+        // document.write(`${str1} ${"Shalini singh"}`);
+
+        // document.write(`${"Praveen singh &"} ${'Shalini singh'}`)
+
+
+        // var str = "praveen singh chauhan";
+        // document.write(str.indexOf('n',15));
+        // document.write(str.lastIndexOf('h'))
+        // document.write(str.indexOf('h',13));
+        // document.write(indexOf(str))
+
+        // /search method//
+
+        // var str = "praveen singh"
+        // document.write(str.search('n', 7));
+        // document.write(str.indexOf('n',7))
+
+        // var str="JavaTpoint";
+        // document.write(str.replace('Tpoint', " " + 'Script'));
+
+        // var str = "Learn Node.js on Javatpoint. Node.js is well-known JavaScript framework.";
+        // document.write(str.replace('Node.js','Angularjs'));//for first match//<br>
+
+        // document.write(str.replace(/Node.js/g,'AngularJS'))//for multiple seacrch//
+
+        // document.write(str.replace(/Node.JS/gi,'AngularJS'));//for case-sensitive//
+        // document.write(str.replace(/Node.js/g));
+
+
+        // var str="praveen";
+        // // document.write(str.substr(1))<br
+        // document.write(str.substr(2,6));
+
+        // var str = "PRAVEEN SINGH CHAUHAN !!"
+        // document.write(str.toLowerCase())
+        // document.writeln(str.toLocaleLowerCase())
+
+        // var str = "praveen singh chauhan!!";
+        // var result = str.toUpperCase();
+        // document.getElementById("demo").innerHTML=result;
+
+
+        // document.getElementById("demo").toUpperCase(str);
+        // document.write(str.toUpperCase())
+
+        // var str = "praveen singh chauhan!!"
+        // document.writeln(str.toUpperCase())
+
+
+        // var str = "praveen singh chauhna!!"
+        // // var result = str.toUpperCase();
+        // console.log(str.toUpperCase())
+        // console.log(result);
+
+        // array method//
+        // var arr = ["volvo", "Safari", "Scorpio", "Toyota"];
+        // for (i = 0; i < arr.length; i++) {
+        //     document.write(arr[i] + "<br/>");
+
+        // }
+
+
+        // var emp = new Array();
+        // emp[0]="Arun singh";
+        // emp[1]="Pawan singh";
+        // for(i=0; i<emp.length; i++){
+        //     document.write(emp[i] + "<br/>")
+        // }
+
+
+
+
+        // // by constructor method//
+        // var emp = new Array("jai singh!! ,Praveen singh, Chandan singh");
+        // for (i = 0; i < emp.length; i++) {
+        //     document.write(emp[i] +"<br/>")
+        // }
+
+
+        // by literal method//
+        // var car = ["Range Rover", "Scorpio", "Maruti", "Volvo", "Discovery", "RangeRover"];
+        // for (i = 0; i < car.length; i++) {
+        //     document.write(car[i] + "<br/>");
+        // }
+
+
+        // cancat method//
+        // var car1 = ["Range-Rover", "Scorpio", "Tavera"];
+        // var car2 = ["Bulero", "Maruti", "ambestor", "Volvo"];
+        // var car3 = ["BMW", "Lamborgini", "Mercidies", "Breza"];
+        // var result = car1.concat(car2, car3);
+        // uldocument.getElementById("demo").innerHTML=result;
+
+        // for (i = 0; i < result.length; i++) {
+        //     document.write(result[i] + "<br/>")
+        // }
+
+        // document.write(`${car1} / ${car2}${car3}`)
+
+        // var car1 = ["Range-Rover", "Scorpio", "Tavera"];
+        // var car2 = ["Bulero", "Maruti", "ambestor", "Volvo"];
+        // var car3 = ["BMW", "Lamborgini", "Mercidies", "Breza"];
+        // var result = car1.concat(car2, car3);
+        // var result1 = result.entries();
+        // document.write("After appliying the entries method: " + " <br>")
+
+        // for (let e of result1) {
+        //     document.write(e + "<br/>");
+        // }
+        // function arr() {
+        //     var car1 = ["Range-Rover", "Scorpio", "Tavera"];
+        //     var car2 = ["Bulero", "Maruti", "ambestor", "Volvo"];
+        //     var car3 = ["BMW", "Lamborgini", "Mercidies", "Breza"];
+        //     var result = car1.concat(car2, car3);
+        //     var result1 = result.entries();
+        //     document.write("After appliying a function with button click event" + "<br>");
+
+        //     for (x of result1) {
+        //         document.write("<br/>" + x);
+
+        //     }
+
+        // }
+
+
+        // var marks = [20, 30, 50, 40, 80, 60];
+        // function check(value) {
+        //     return value > 30;
+
+        // }
+        // document.write(marks.every(check));
+
+        // var marks = [50, 20, 40, 30, 90, 70];
+        // function test(element, index, arr) {
+        //     return index < 6;
+        // }
+        // document.write(marks.every(test));
+
+        // const ages = [32, 33, 25, 40];
+        // // ages.every(checkAge);
+        // function checkAge(age) {
+        //     return age > 20;
+
+        // }
+        // document.getElementById("demo").innerHTML = ages.every(checkAge);
+
+        // const survey = [
+        //     { name: "Praveen singh", answer: "yes" },
+        //     { name: "Jay singh", answer: "yes" },
+        //     { name: "Shalini singh", answer: "yes" },
+        //     { name: "Kishan singh", answer: "yes" },
+        //     { name: "AmanPratap singh", answer: "NO" },
+        // ];
+        // document.getElementById("demo").innerHTML=survey.every(isSameAnswer);
+        // let result = survey.every(isSameAnswer);
+        // function isSameAnswer(el, index, arr) {
+        //     if (index === 0) {
+        //         return true;
+        //     } else {
+        //         return (el.answer === arr[index - 1].answer);
+        //     }
+        // }
+
+        // const ages = [32, 33, 12, 50, 40];
+        // function checkage(age) {
+        //     return age > document.getElementById("ageToCheck").value;
+        // }
+        // function myFunction() {
+        //     document.getElementById("demo").innerHTML = ages.every(checkage);
+        // }
+
+        // const fruits=["Apple","Mango","Papaya","Guava"];
+        // // document.write(fruits.fill("Kiwi"));
+        // // console.log(fruits.fill("Cucumber"))
+        // document.getElementById("demo").innerHTML=fruits.fill("Tomato")
+
+        // const fruits = ["apple","Banana","Orange","Papaya","Watermilion"];
+        // document.getElementById("demo").innerHTML=fruits.fill("kiwi",2,4);
+
+        // const marks = [30, 50, 40, 25];
+        // function check(value) {
+        //     return value > 30;
+        // }
+        // document.write(marks.filter(check));
+
+        // const ages = [32, 35, 45, 50, 55];
+        // function checkAge(age) {
+        //     return age > document.getElementById("ageToCheck").value;
+        // }
+        // function myFunction(){
+        //     document.getElementById("demo").innerHTML=ages.find(checkAge);
+        // }
+
+        // const marks = [30, 40, 50, 60, 70, 80];
+        // var result = marks.filter((value, index, arr) => {
+        //     return value > 40;
+        // });
+        // console.log(result);
+
+        // const marks = [10, 20, 30, 40, 50, 60];
+        // function check(mark) {
+        //     return mark > document.getElementById("checknumber").value;
+        // }
+        // function myFunction() {
+        //     document.getElementById("demo").innerHTML = marks.filter(check);
+        // }
+
+        // const marks = [30, 40, 50, 60, 70];
+        // var result = marks.filter((value, index, arr) => {
+        //     return value > 50;
+        // })
+        // console.log(result)
+
+        // var marks = [30, 40, 50, 60, 70, 80, 90];
+        // var result = marks.filter((value, index, arr) => value > 40);
+        // console.log(result)
+
+
+        // const marks = [30, 40, 50, 60, 20, 80];
+        // var result = marks.filter(myFunction);
+        // function myFunction(value, index, arr) {
+        //     return index > 3;
+        // }
+        // console.log(result)
+
+
+        var students = [
+            {id:99,name:"Praveen singh",age:29,marks:[20,33,]}
+        ]
+
+
+
+
+
+
+    </script>
+</body>
+<!-- <input type="number" id="checknumber" value="20"> -->
+<!-- <button onclick="myFunction()">Click me</button> -->
+<!-- <input type="number" id="ageToCheck" value="40">
+<button onclick="myFunction()">Click Me</button> -->
+<!-- <input type="number" id="ageToCheck" value="18"><br><br>
+<button type="button" onclick="myFunction()">tryIt</button> -->
+<!-- <input type="button" onclick="checkAge()" value="clickMe"> -->
+<!-- <input type="button" onclick="arr()" value="clickMe"> -->
+<!-- <button type="button" onclick="arr()">Click me</button> -->
+
+</html>
